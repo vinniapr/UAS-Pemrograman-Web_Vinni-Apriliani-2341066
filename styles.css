@@ -1,0 +1,99 @@
+/* Styling khusus untuk halaman produk */
+.products-page {
+    background: linear-gradient(135deg, #FCE4EC 0%, #F8BBD9 100%); /* Background gradient pink lembut */
+    min-height: 100vh; /* Tinggi penuh */
+}
+
+.products-page header {
+    background: linear-gradient(135deg, #E91E63 0%, #C2185B 100%); /* Header pink gelap */
+}
+
+.products-page h1 {
+    color: #FFFFFF; /* Warna judul putih */
+}
+
+/* Grid produk yang bagus */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid responsif */
+    gap: 2rem; /* Jarak antar produk */
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card produk */
+.product-card {
+    background: #FFFFFF; /* Background putih */
+    border-radius: 15px; /* Sudut bulat */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Bayangan */
+    overflow: hidden; /* Potong overflow */
+    transition: transform 0.3s ease; /* Transisi */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Geser ke atas saat hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar */
+}
+
+.product-image {
+    width: 100%; /* Lebar penuh */
+    height: 200px; /* Tinggi tetap */
+    object-fit: cover; /* Potong gambar agar pas */
+}
+
+.product-info {
+    padding: 1.5rem; /* Padding dalam */
+}
+
+.product-info h3 {
+    margin: 0 0 0.5rem 0; /* Margin bawah */
+    color: #333; /* Warna teks gelap */
+}
+
+.product-info p {
+    margin: 0 0 1rem 0; /* Margin bawah */
+    color: #666; /* Warna teks abu */
+}
+
+.price {
+    font-size: 1.2rem; /* Ukuran font harga */
+    font-weight: bold; /* Tebal */
+    color: #E91E63; /* Warna pink */
+}
+
+.quantity-controls {
+    display: flex; /* Flexbox untuk controls */
+    align-items: center; /* Rata tengah */
+    gap: 0.5rem; /* Jarak */
+    margin: 1rem 0; /* Margin atas bawah */
+}
+
+.add-btn {
+    width: 100%; /* Lebar penuh */
+    margin-top: 1rem; /* Margin atas */
+}
+
+/* Styling seragam untuk semua button dengan icon */
+.add-btn, .update-btn, .remove-btn, .checkout-btn, .logout-btn, .cart-btn, .back-btn, .login-btn {
+    display: flex; /* Flexbox untuk icon dan teks */
+    align-items: center; /* Rata tengah vertikal */
+    gap: 0.5rem; /* Jarak antara icon dan teks */
+    background: linear-gradient(135deg, #FFB6C1 0%, #FF69B4 100%); /* Gradient pink seragam */
+    color: #FFFFFF; /* Warna teks putih */
+    border: none; /* Hapus border */
+    padding: 0.75rem 1.5rem; /* Padding dalam */
+    border-radius: 25px; /* Sudut bulat lonjong */
+    font-weight: 500; /* Tebal font */
+    cursor: pointer; /* Cursor pointer */
+    transition: all 0.3s ease; /* Transisi smooth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+    text-decoration: none; /* Hapus underline untuk link */
+}
+
+/* Hover effect seragam untuk semua button */
+.add-btn:hover, .update-btn:hover, .remove-btn:hover, .checkout-btn:hover, .logout-btn:hover, .cart-btn:hover, .back-btn:hover, .login-btn:hover {
+    background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%); /* Gradient lebih gelap */
+    transform: translateY(-2px); /* Geser ke atas */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar */
+}
